@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
         logoSpan.forEach((span, idx) => {
             setTimeout(() => {
                 span.classList.add('active')
-            }, (idx + 1) * 400)
+            }, (idx + 1) *300)
         });
 
 
@@ -227,4 +227,3 @@ tl.from('.right main div', {
     duration: 1,
 
 })
-

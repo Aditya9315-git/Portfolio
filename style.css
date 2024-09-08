@@ -68,6 +68,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 nav ul {
@@ -134,6 +137,7 @@ label#logo {
     align-items: center;
     justify-content: center;
     background-color: #18181B;
+    padding: 100px 0px;
 }
 
 .para {
@@ -167,17 +171,17 @@ label#logo {
 
 
 .img-para-div {
-    /* border: 2px solid; */
+    /* border: 1px solid; */
     margin-top: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
 
 }
 
 .img-para {
-    padding: 6px;
-    height: 42px;
-
+    padding: 10px 0px;
+    height:60px;
 }
 
 

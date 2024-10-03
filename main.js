@@ -227,3 +227,20 @@ tl.from('.right main div', {
     duration: 1,
 
 })
+
+
+
+// Dark mode===
+
+var sunicon=document.getElementById("sunicon")
+
+sunicon.onclick=function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        sunicon.src="moon.png"
+    }
+    else{
+        sunicon.src="sun-icon-31.png"
+
+    }
+}

@@ -13,7 +13,19 @@ body,
 html {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    background-color: #18181B;
+    background-color: var(--primary-color);
+}
+
+
+:root{
+    --primary-color:#18181B;
+    --secondary-color:#fff;
+}
+
+.dark-theme{
+    --primary-color:rgb(228, 223, 223);
+    --secondary-color:#18181B;
+    --third-color:#bababb;
 }
 
 
@@ -62,15 +74,19 @@ html {
 /* Navbar */
 
 
+
+
+
 nav {
     padding: 30px;
-    background-color: #18181B;
+    /* background-color:var(--primary-color); */
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
     z-index: 1;
+    backdrop-filter: blur(20px);
 }
 
 nav ul {
@@ -82,10 +98,10 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--secondary-color);
     padding: 8px 20px;
-    background-color: rgba(255, 255, 255, 0.272);
-    border: none;
+    background-color: var(--third-color);
+    border: 0.5px solid gainsboro;
     border-radius: 20px;
     font-size: 16px;
 }
@@ -102,12 +118,12 @@ nav ul,
 nav a {
     list-style: none;
     text-decoration: none;
-    color: #3e3e3d;
+    color: #f8f8ed;
     font-size: 3vh;
 }
 
 label#logo {
-    color: #f7f8f9;
+    color:var(--secondary-color);
     font-size: 5vh;
     padding: 0px 100px;
 }
@@ -115,7 +131,7 @@ label#logo {
 
 .checkbtn {
     font-size: 30px;
-    color: white;
+    color: var(--secondary-color);
     float: right;
     cursor: pointer;
     display: none;
@@ -127,6 +143,11 @@ label#logo {
 }
 
 
+#sunicon{
+    width: 30px;
+    cursor: pointer;
+}
+
 /* ////////////// main website///////////////// */
 
 
@@ -136,7 +157,7 @@ label#logo {
     top: 0;
     align-items: center;
     justify-content: center;
-    background-color: #18181B;
+    background-color: var(--primary-color);
     padding: 100px 0px;
 }
 
@@ -149,7 +170,7 @@ label#logo {
     line-height: 50px;
     /* gap: 50px; */
     padding: 60px;
-    color: #fff;
+    color:var(--secondary-color);
     font-size: 3.5vh;
     font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
     /* background-color: #18181B; */
@@ -276,8 +297,9 @@ label#logo {
 /* Section2 */
 
 #section2 {
-    background-color: #18181B;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  
 }
 
 .ab {
@@ -286,7 +308,8 @@ label#logo {
     text-align: center;
     font-size: 1.2rem;
     line-height: 40px;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 
 }
 
@@ -312,9 +335,10 @@ label#logo {
 .left {
     /* border: 2px solid;    */
     height: 30rem;
-    width: 40%;
-    color: white;
-    padding: 13px;
+    width: 45%;
+    color:var(--secondary-color);
+    padding: 20px 50px;
+    background-color: var(--primary-color);
     line-height: 28px;
     /* line-height: 100px;
     gap: 20px; */
@@ -331,9 +355,10 @@ label#logo {
 
     /* border: 2px solid; */
     height: 30rem;
-    width: 40%;
-    color: white;
-    background-color: #18181B;
+    width:55%;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 20px 20px;
 
 }
 
@@ -452,7 +477,7 @@ main {
 /* section 3 */
 
 #section3 {
-    background-color: #18181B;
+    background-color: var(--primary-color);
     /* height: 100vh;
     width: 100%; */
     display: flex;
@@ -489,11 +514,11 @@ main {
     transition: ease-in .2s;
 }
 
-#prj1:hover {
+/* #prj1:hover {
     background-color: #18181B;
     height: 79vh;
 
-}
+} */
 
 #prj1 .techpr {
     height: 60%;
@@ -603,10 +628,10 @@ footer a {
     border-radius: 20px;
 }
 
-#icon a i:hover {
+/* #icon a i:hover {
     background-color: #299ef2;
     font-size: 3vh;
-}
+} */
 
 #foot1 {
     font-size: 2.5vh;
